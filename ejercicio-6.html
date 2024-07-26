@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 6 </title>
+    <style>
+        /* Importa la fuente "Open Sans" desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        /* Estilos generales para el cuerpo del documento */
+        body {
+            margin: 0; /* Elimina el margen por defecto */
+            padding: 0; /* Elimina el padding por defecto */
+            font-family: 'Open Sans', sans-serif; /* Aplica la fuente importada */
+        }
+
+        /* Estilo para los encabezados h1 */
+        h1 {
+            font-size: 50px; /* Tamaño de fuente grande */
+            font-weight: 200; /* Peso de la fuente ligero */
+        }
+
+        /* Estilo para los encabezados h2 */
+        h2 {
+            font-size: 40px; /* Tamaño de fuente grande, pero menor que h1 */
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            font-size: 16px; /* Tamaño de fuente estándar para el texto */
+        }
+
+        /* Estilo para el contenedor principal */
+        .container {
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            width: 80%; /* Ancho del contenedor del 80% del ancho de la página */
+            background-color: lightgray; /* Color de fondo gris claro */
+        }
+
+        /* Estilo para la cabecera del documento */
+        .header {
+            background-color: black; /* Color de fondo negro */
+            padding: 10px 20px; /* Espacio interno en la cabecera */
+            margin: 0; /* Elimina el margen por defecto */
+        }
+
+        /* Estilo para el título de la cabecera */
+        .header__title {
+            color: white; /* Color del texto en blanco */
+            margin: 0; /* Elimina el margen por defecto */
+        }
+
+        /* Estilo común para aside y article para el modelo de caja */
+        .aside,
+        .article {
+            box-sizing: border-box; /* Incluye padding y borde en el ancho y alto del elemento */
+            float: left; /* Hace que los elementos se alineen uno al lado del otro */
+        }
+
+        /* Estilo para el aside (barra lateral) */
+        .aside {
+            width: 40%; /* Ancho del 40% del contenedor */
+            padding: 0 20px; /* Espacio interno a los lados */
+        }
+
+        /* Estilo para el article (contenido principal) */
+        .article {
+            background: white; /* Fondo blanco para el contenido principal */
+            margin: 0; /* Elimina el margen por defecto */
+            width: 60%; /* Ancho del 60% del contenedor */
+            padding: 10px 20px; /* Espacio interno */
+        }
+
+        /* Estilo para el título dentro del article */
+        .article__title {
+            margin-bottom: 12px; /* Espacio abajo del título */
+        }
+
+        /* Estilo para los párrafos dentro del article */
+        .article__p {
+            margin-top: 0; /* Elimina el margen superior */
+        }
+
+        /* Estilo para el menú dentro del aside */
+        .aside__menu {
+            margin-bottom: 0; /* Elimina el margen inferior */
+        }
+
+        /* Estilo para los enlaces dentro del aside */
+        .aside__link {
+            font-size: 20px; /* Tamaño de fuente mayor para los enlaces */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: #2aa2e4; /* Color azul para los enlaces */
+        }
+
+        /* Estilo para la lista dentro del aside */
+        .aside__list {
+            margin-left: 30px; /* Espacio a la izquierda para alinear la lista */
+        }
+
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: grey; /* Fondo gris para el pie de página */
+            text-align: center; /* Centra el texto */
+            clear: both; /* Limpia los flotantes anteriores */
+            color: white; /* Color del texto en blanco */
+            padding-bottom: 10px; /* Espacio interno en la parte inferior */
+        }
+
+        /* Estilo para el texto del pie de página */
+        .footer__context {
+            margin: 0; /* Elimina el margen por defecto */
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1 class="header__title">Titulo página</h1>
+        </header>
+
+        <aside class="aside">
+            <h2 class="aside__menu">Menú</h2>
+            <ul class="aside__list">
+                <li class="aside__item"><a class="aside__link" href="">Item-1</a></li>
+                <li class="aside__item"><a class="aside__link" href="">Item-2</a></li>
+                <li class="aside__item"><a class="aside__link" href="">Item-3</a></li>
+                <li class="aside__item"><a class="aside__link" href="">Item-4</a></li>
+                <li class="aside__item"><a class="aside__link" href="">Item-5</a></li>
+            </ul>
+        </aside>
+
+        <article class="article">
+            <h2 class="article__title">Sub-título</h2>
+            <p class="article__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptas facilis consectetur,
+                asperiores distinctio pariatur accusantium voluptatum iusto, veniam iure eligendi aspernatur dolorum
+                corporis totam amet eaque nemo magni maxime.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minus possimus harum quidem sunt
+                asperiores officiis aliquam amet eligendi odit. Eum ducimus corrupti ipsam nesciunt in laboriosam
+                minima,
+                unde animi.</p>
+        </article>
+
+        <footer class="footer">
+            <p class="footer__context">&#169 Todos los derechos reservados</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flag{
+            width: 600px;
+            height: 300px;
+        }
+        .flag__container{
+            border: 1px solid;
+            margin: 50px;
+        }
+        .flag__spain{
+            height: 100%;
+        }
+        .flag__spain--red{
+            background-color: red;
+            height: 30%;
+        }
+        .flag__spain--yellow{
+            background-color: yellow;
+            height: 40%;
+        }
+        .flag__denmark{
+            background: red;
+            height: 100%;
+            position: relative;
+        }
+        .flag__denmark--white{
+            background: white;
+        }
+        .flag__denmark--v{
+            height: 100%;
+            width: 40px;
+            margin-left: 130px;
+        }
+        .flag__denmark--h{
+            height: 40px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            top: 130px;
+        }
+        .flag__emirates{
+            background: red;
+            height: 100%;
+            position: relative;
+        }
+        .flag__emirates--green{
+            background: green;
+            height: 33%;
+            width: 77%;
+            float: right;
+        }
+        .flag__emirates--white{
+            background: white;
+            height: 34%;
+            width: 77%;
+            float: right;
+        }
+        .flag__emirates--black{
+            background: black;
+            height: 33%;
+            width: 77%;
+            float: right;
+        }
+        /* .flag__japan {
+            height: 100%;
+
+            position: relative;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flag__japan--circle {
+            width: 30%;
+            height: 60%;
+            background-color: red;
+            border-radius: 50%;
+        } */
+
+        .flag__japan{
+            background: white;
+            height: 100%;
+            position: relative;
+        }
+        .flag__japan--circle{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="flag__container flag__spain">
+            <div class="flag__spain--red"></div>
+            <div class="flag__spain--yellow"></div>
+            <div class="flag__spain--red"></div>
+        </div>
+
+        <div class="flag__container flag__denmark">
+            <div class="flag__denmark flag__denmark--white flag__denmark--v"></div>
+            <div class="flag__denmark flag__denmark--white flag__denmark--h"></div>
+        </div>
+
+        <div class="flag__container flag__emirates">
+            <div class="flag__emirates--green"></div>
+            <div class="flag__emirates--white"></div>
+            <div class="flag__emirates--black"></div>
+            
+        </div>
+
+        <div class="flag__container flag__japan">
+            <div class="flag__japan--circle"></div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
